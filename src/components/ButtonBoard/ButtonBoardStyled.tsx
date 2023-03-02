@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 const ButtonBoardStyled = styled.section`
+  width: 365px;
+  height: 570px;
+  background: linear-gradient(156.9deg, #3e566b 0%, #21384e 100.39%);
+  box-shadow: 8px 7px 19px rgb(0 0 0 / 30%);
+  border-radius: 30px;
+
   button {
     width: 70px;
     height: 70px;
@@ -15,10 +21,14 @@ const ButtonBoardStyled = styled.section`
     border-color: #6c849b;
   }
 
-  ol {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  .wrapper {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    grid-auto-rows: minmax(80px, auto);
+
+    padding: 190px 0 0 0;
   }
 `;
 
