@@ -9,7 +9,7 @@ const ButtonBoard = (): JSX.Element => {
       <ol className="keyboard">
         {keyNumbers.map((keys, position) => (
           <li key={position}>
-            <Button text={keys} />
+            <Button name={keys} />
           </li>
         ))}
       </ol>
